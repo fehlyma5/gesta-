@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+    <h1>Bem Vindo ao Gesta Plus</h1>
+    <p>Use a barra de navegação para acessar as diferentes seções do site.</p>
+    <div class="container-home">
+         <h2>Nossas Categorias</h2>
+
+    <div class="vitrine-categorias">
+        <div class="categoria-item">
+            <img src="{% static 'images/5.png' %}" alt="5">
+            <h3>Categoria 1</h3>
+        </div>
+
+        <div class="categoria-item">
+            <img src="{% static 'images/4.png' %}" alt="4">
+            <h3>Categoria 2</h3>
+        </div>
+
+        <div class="categoria-item">
+            <img src="{% static 'images/3.png' %}" alt="3">
+            <h3>Categoria 3</h3>
+        </div>
+    </div>
+</div>
+{% endblock %}

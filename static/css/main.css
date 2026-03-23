@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.logo {
+    width: 200px; /* Altere esse número para o tamanho que achar melhor */
+    height: auto;  /* Mantém a proporção da imagem sem achatar */
+    display: block; 
+    margin: 10px 0; /* Dá um espacinho em cima e embaixo */
+}
+
+/* Espaçamento geral da página inicial */
+.container-home {
+    padding: 40px 50px;
+    text-align: center;
+}
+
+.container-home h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* O container que alinha as 3 caixas em linha */
+.vitrine-categorias {
+    display: flex;
+    justify-content: space-between; /* Dá espaçamento igual entre elas */
+    gap: 20px; /* Cria um espaço (respiro) entre as caixas */
+}
+
+/* Cada caixinha individual do produto/categoria */
+.categoria-item {
+    flex: 1; /* Força as três caixas a terem exatamente o mesmo tamanho */
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Controla o tamanho das imagens dentro da vitrine */
+.categoria-item img {
+    width: 100%; /* A imagem se ajusta ao tamanho da caixinha dela */
+    height: 1000px; /* Define uma altura fixa para que fiquem todas iguais */
+    object-fit: cover;
+ } /* Recorta a imagem sem achatar se ela for desproporcional
+ */
+    /*border-radius: 4px;
+    /*margin-bottom: 15px;

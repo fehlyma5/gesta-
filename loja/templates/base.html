@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesta Plus</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="{% static 'images/gesta_logo.png' %}" alt="Logo Gesta" class="logo">
+        
+        <div class="nav-links">
+            <a href="#">Início</a>
+            <a href="#">Produtos</a>
+            <a href="#">Sobre</a>
+        </div>
+    </nav>
+    {% block body%}
+
+    {% endblock %}
+</body>
+</html>
